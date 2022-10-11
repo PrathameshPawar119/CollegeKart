@@ -1,0 +1,83 @@
+.InputForm{
+    font-size: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, violet, transparent,blueviolet);
+    margin: 2% auto;
+    padding: 2%;
+    width: 68%;
+    box-shadow: 4px 5px 4px gray;
+    transition: all 0.4s ease;
+}
+.ptr{
+    cursor: pointer;
+}
+.InputForm:hover{
+    box-shadow: 6px 6px 9px gray;
+    transform: translateY(-6px);
+}
+
+label{
+    font-weight:bold;
+    padding: 0px;
+    margin-bottom: 4px;
+    transition: 0.4s;
+}
+label:hover{
+    color: rgb(90, 2, 2);
+}
+
+.prodInp{
+    border: 3px solid blueviolet;
+    border-radius: 6px;
+    width: 90%;
+    padding: 1%;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    background: transparent;
+}
+.otherinfo{
+    font-size: 16px;
+    text-align: center;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-width: 1px;
+}
+.otherinfo .prodInp{
+    height: 32px;
+}
+
+.pdesc > textarea{
+    max-width: 90%;
+    max-height: 200%;
+    height: 120%;
+    min-width: 90%;
+}
+
+
+.category select{
+    font-weight: bold;
+    background-color: rgb(235, 207, 249);
+}
+.ptitle{
+    margin-bottom: 6px;
+}
+h2, h1{
+    text-align: center;
+}
+
+
+@media (max-width: 700px){
+    .InputForm{
+        width: 94%;
+    }
+}
+small{
+    display: block;
+    font-size: 10px !important;
+}
